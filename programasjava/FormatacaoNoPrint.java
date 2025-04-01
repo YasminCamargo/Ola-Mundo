@@ -6,5 +6,6 @@ public class FormatacaoNoPrint {
         String nome = (String) "Yasmin";
 
         System.out.printf("A nota de %s é %.2f.\n", nome, nota);
+    //Poderia ser também System.out.format("A nota de %s é %.2f.\n", nome, nota);
     }
 }
