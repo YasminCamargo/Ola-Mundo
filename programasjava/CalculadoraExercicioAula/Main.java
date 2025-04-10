@@ -29,7 +29,7 @@ public class Main {
             System.out.println("6. Exponenciação");
             System.out.println("7. Fibonacci");
             System.out.println("x=============x=============x");
-            System.out.print("+--Escolha: ");
+            System.out.print("+-Escolha: ");
             char operador = scanner.next().charAt(0); // Lê o primeiro caractere da entrada
 
             // Declara uma variável do tipo Operacao (polimorfismo)
@@ -48,6 +48,9 @@ public class Main {
                     break;
                 case '4': // Se o operador for '/'
                     operacao = new Divisao(); // Instancia a classe Divisao
+                    break;
+                case '5':
+                    operacao = new Fatorial();
                     break;
                 default: // Se o operador não for reconhecido
                     throw new IllegalArgumentException("Erro: operador inválido."); // Lança exceção
