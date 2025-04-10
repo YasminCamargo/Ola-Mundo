@@ -29,6 +29,7 @@ public class Main {
             System.out.println("6. Exponenciação");
             System.out.println("7. Fibonacci");
             System.out.println("x=============x=============x");
+            System.out.print("+--Escolha: ");
             char operador = scanner.next().charAt(0); // Lê o primeiro caractere da entrada
 
             // Declara uma variável do tipo Operacao (polimorfismo)
