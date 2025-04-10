@@ -20,7 +20,15 @@ public class Main {
             double v2 = scanner.nextDouble(); // Lê outro número double
 
             // Solicita e lê o operador (+ ou /)
-            System.out.println("Digite o operador (+, -, /):");
+            System.out.println("x========CALCULADORA========x");
+            System.out.println("1. Adição");
+            System.out.println("2. Subtração");
+            System.out.println("3. Multiplicação");
+            System.out.println("4. Divisão");
+            System.out.println("5. Fatorial");
+            System.out.println("6. Exponenciação");
+            System.out.println("7. Fibonacci");
+            System.out.println("x=============x=============x");
             char operador = scanner.next().charAt(0); // Lê o primeiro caractere da entrada
 
             // Declara uma variável do tipo Operacao (polimorfismo)
@@ -28,16 +36,16 @@ public class Main {
 
             // Escolhe a operação com base no operador fornecido
             switch (operador) {
-                case '+': // Se o operador for '+'
+                case '1': // Se o operador for '+'
                     operacao = new Adicao(); // Instancia a classe Adicao
                     break;
-                case '-':
+                case '2':
                     operacao = new Subtracao();
                     break;
-                case 'x':
+                case '3':
                     operacao = new Multiplicacao();
                     break;
-                case '/': // Se o operador for '/'
+                case '4': // Se o operador for '/'
                     operacao = new Divisao(); // Instancia a classe Divisao
                     break;
                 default: // Se o operador não for reconhecido
