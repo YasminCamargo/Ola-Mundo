@@ -52,6 +52,9 @@ public class Main {
                 case '5':
                     operacao = new Fatorial();
                     break;
+                case '6':
+                    operacao = new Exponenciacao();
+                    break;
                 default: // Se o operador não for reconhecido
                     throw new IllegalArgumentException("Erro: operador inválido."); // Lança exceção
             }
