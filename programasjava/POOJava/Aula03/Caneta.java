@@ -5,7 +5,7 @@ public class Caneta {
     public String cor;
     private float ponta;
     protected int carga;
-    protected boolean tampada;
+    private boolean tampada;
     
 
     public void status() {
@@ -28,8 +28,8 @@ public class Caneta {
         this.tampada = true;
     }
 
-    protected void destampar() {
-        this.tampada = false;
+    public void destampar() {
+        this.tampada = false; //Consigo alterar o tampada, que é private, aqui na classe.
     }
     
 }
