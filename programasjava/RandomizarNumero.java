@@ -14,5 +14,8 @@ public class RandomizarNumero {
 
         System.out.println("Número aleatório: " + (numRandom.nextInt(21) + 5)); //Gera um número entre 5 e 25 (O número limite superior será 25-5+1=31 e 5 precisa ser
                                                                                       //somado ao resultado)
+
+        double imc = (42.0 / (Math.pow(1.62, 2)));
+        System.out.println(imc);                                                                                        
     }
 }
