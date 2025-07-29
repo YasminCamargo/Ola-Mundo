@@ -14,3 +14,7 @@ print(frutas)
 #Substitui somente um index (1, não conta o 2) por 2 itens
 frutas[1:2] = ["Goiaba", "Pêra"]
 print(frutas)
+
+#Substitui no local que você quer (primeiro o index depois o item)
+frutas.insert(2, "Laranja")
+print(frutas)
